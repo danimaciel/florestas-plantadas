@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="pt">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Florestas Plantadas · Protótipo</title>
+<meta name="description" content="Protótipo de consulta ao conhecimento da Embrapa sobre florestas plantadas, para o Centro de Referência da FAO.">
+<link rel="stylesheet" href="style.css?v=14">
+</head>
+<body>
+<header class="topo">
+  <div class="topo-in">
+    <a href="#/" class="marca" data-i18n-title="inicio">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3 7 15h5l-6 8h8v6h4v-6h8l-6-8h5z" fill="currentColor"/></svg>
+      <span><b data-i18n="marca">Florestas Plantadas</b><small data-i18n="marca_sub">Conhecimento da Embrapa</small></span>
+    </a>
+    <span class="selo" data-i18n="prototipo">Protótipo</span>
+    <nav class="idiomas" aria-label="Idioma / Language">
+      <button data-lang="pt">PT</button><button data-lang="en">EN</button><button data-lang="fr">FR</button>
+    </nav>
+  </div>
+</header>
+
+<main id="app" aria-live="polite">
+  <p class="carregando" data-i18n="carregando">Carregando…</p>
+</main>
+
+<footer class="rodape">
+  <div class="rodape-in">
+    <p data-i18n-html="rodape_metodo"></p>
+    <p class="mudo" data-i18n-html="rodape_aviso"></p>
+    <p class="mudo" id="meta-linha"></p>
+  </div>
+</footer>
+<script src="data/meta.js?v=14"></script>
+<script src="data/taxonomia.js?v=14"></script>
+<script src="data/docs.js?v=14"></script>
+<script src="data/similares.js?v=14"></script>
+<script src="data/paises.js?v=14"></script>
+<script src="app.js?v=14"></script>
+</body>
+</html>
