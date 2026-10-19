@@ -11,6 +11,19 @@
       carregando: "Carregando o acervo…",
       titulo: "O que a Embrapa sabe sobre florestas plantadas",
       intro: "Publicações e soluções tecnológicas da Embrapa sobre eucalipto, espécies nativas e outras árvores plantadas, organizadas para técnicos, gestores e produtores de outros países.",
+      capa_selo: "Centro de Referência da FAO em Florestas Plantadas e Sistemas ILPF · Embrapa Florestas",
+      n_docs: "publicações e soluções tecnológicas", n_col: "coleções por espécie", n_lin: "linhas temáticas do Centro",
+      n_paises: "países africanos com correspondência de clima",
+      comecar: "Por onde começar",
+      ent: { busca: ["Pergunte do seu jeito", "Em português, inglês ou francês: a busca entende os conceitos e encontra trabalhos escritos em português."],
+             col: ["Explore as coleções", "Eucalipto, espécies nativas do Brasil, espécies de interesse africano e florestas plantadas em geral."],
+             pais: ["Escolha o seu país", "Conhecimento gerado no Brasil em clima igual ao do seu país, e sobre espécies que já são plantadas aí."] },
+      linhas_tit: "As linhas temáticas do Centro",
+      linhas_nota: "Um documento pode estar em mais de uma linha. A ligação entre os temas técnicos e as linhas é uma proposta em validação.",
+      como_tit: "Como este acervo foi feito",
+      como: [["Definição oficial", "Floresta plantada segundo a FAO (FRA 2020/2025), mais os sistemas de integração lavoura-pecuária-floresta, que fazem parte do escopo do Centro."],
+             ["Análise semântica", "As publicações e soluções da Embrapa foram lidas por um modelo de linguagem multilíngue (SBERT) e classificadas a partir de exemplos rotulados."],
+             ["Revisão de especialistas", "A classificação está sendo conferida pelo grupo especial do Centro. Até lá, este ambiente é um protótipo para discussão."]],
       buscar_ph: "Ex.: mudas de eucalipto, adubação de teca, restauração no semiárido",
       buscar: "Buscar", exemplos: "Experimente:",
       ex: ["produção de mudas de eucalipto", "pine seedlings nursery", "mogno-africano", "restauração da Caatinga", "carvão vegetal"],
@@ -76,6 +89,19 @@
       carregando: "Loading the collection…",
       titulo: "What Embrapa knows about planted forests",
       intro: "Embrapa publications and technological solutions on eucalyptus, native species and other planted trees, organised for technicians, managers and growers in other countries.",
+      capa_selo: "FAO Reference Centre for Planted Forests and Integrated Crop-Livestock-Forestry Systems · Embrapa Forestry",
+      n_docs: "publications and technological solutions", n_col: "collections by species", n_lin: "thematic lines of the Centre",
+      n_paises: "African countries matched by climate",
+      comecar: "Where to start",
+      ent: { busca: ["Ask in your own words", "In Portuguese, English or French: the search understands concepts and finds work written in Portuguese."],
+             col: ["Browse the collections", "Eucalyptus, Brazilian native species, species of interest to Africa and planted forests in general."],
+             pais: ["Choose your country", "Knowledge generated in Brazil under the same climate as your country, and on species already planted there."] },
+      linhas_tit: "The Centre's thematic lines",
+      linhas_nota: "A document may belong to more than one line. The link between technical topics and lines is a proposal under review.",
+      como_tit: "How this collection was built",
+      como: [["Official definition", "Planted forest as defined by FAO (FRA 2020/2025), plus integrated crop-livestock-forestry systems, which are part of the Centre's scope."],
+             ["Semantic analysis", "Embrapa publications and solutions were read by a multilingual language model (SBERT) and classified from labelled examples."],
+             ["Expert review", "The classification is being checked by the Centre's expert group. Until then, this site is a prototype for discussion."]],
       buscar_ph: "E.g.: eucalyptus seedlings, teak fertilization, restoration in drylands",
       buscar: "Search", exemplos: "Try:",
       ex: ["eucalyptus seedling production", "pine seedlings nursery", "african mahogany", "dryland restoration", "charcoal"],
@@ -141,6 +167,19 @@
       carregando: "Chargement de la collection…",
       titulo: "Ce que l'Embrapa sait sur les forêts plantées",
       intro: "Publications et solutions technologiques de l'Embrapa sur l'eucalyptus, les espèces indigènes et d'autres arbres plantés, organisées pour les techniciens, gestionnaires et producteurs d'autres pays.",
+      capa_selo: "Centre de référence de la FAO sur les forêts plantées et l'intégration culture-élevage-forêt · Embrapa Forêts",
+      n_docs: "publications et solutions technologiques", n_col: "collections par espèce", n_lin: "axes thématiques du Centre",
+      n_paises: "pays africains reliés par le climat",
+      comecar: "Par où commencer",
+      ent: { busca: ["Posez votre question", "En portugais, anglais ou français : la recherche comprend les concepts et trouve des travaux écrits en portugais."],
+             col: ["Parcourez les collections", "Eucalyptus, espèces indigènes du Brésil, espèces d'intérêt pour l'Afrique et forêts plantées en général."],
+             pais: ["Choisissez votre pays", "Connaissances produites au Brésil sous le même climat que votre pays, et sur des espèces déjà plantées chez vous."] },
+      linhas_tit: "Les axes thématiques du Centre",
+      linhas_nota: "Un document peut relever de plusieurs axes. Le lien entre thèmes techniques et axes est une proposition en cours de validation.",
+      como_tit: "Comment cette collection a été constituée",
+      como: [["Définition officielle", "Forêt plantée selon la FAO (FRA 2020/2025), plus les systèmes d'intégration culture-élevage-forêt, qui font partie du périmètre du Centre."],
+             ["Analyse sémantique", "Les publications et solutions de l'Embrapa ont été lues par un modèle de langage multilingue (SBERT) et classées à partir d'exemples annotés."],
+             ["Révision par des experts", "La classification est en cours de vérification par le groupe d'experts du Centre. D'ici là, ce site est un prototype pour discussion."]],
       buscar_ph: "Ex. : plants d'eucalyptus, fertilisation du teck, restauration en zone sèche",
       buscar: "Rechercher", exemplos: "Essayez :",
       ex: ["production de plants d'eucalyptus", "pépinière de pin", "acajou d'Afrique", "restauration zone semi-aride", "charbon de bois"],
@@ -226,7 +265,7 @@
   // ---------------------------------------------------------------- estado
   let lang = escolherIdioma();
   const S = { docs: [], sim: [], tax: {}, meta: null, conceitos: [], paises: [] };
-  let estado = { rota: "inicio", col: null, q: "", ctx: null, pais: null, f: novoFiltro(), n: 20, abertos: new Set(), painel: false };
+  let estado = { rota: "inicio", col: null, q: "", ctx: null, pais: null, linha: null, f: novoFiltro(), n: 20, abertos: new Set(), painel: false };
 
   function novoFiltro() { return { k: new Set(), m: new Set(), g: new Set(), x: new Set(), lv: new Set(), ln: new Set(), rg: new Set(), uf: new Set(), kg: new Set() }; }
   function t(chave) { return T[lang][chave]; }
@@ -391,11 +430,12 @@
     const h = decodeURIComponent(location.hash.replace(/^#\/?/, ""));
     const [r, ...resto] = h.split("/");
     const arg = resto.join("/");
-    estado = { rota: "inicio", col: null, q: "", ctx: null, pais: null, f: novoFiltro(), n: 20, abertos: new Set(), painel: false, soEsp: false, semelhantes: false };
+    estado = { rota: "inicio", col: null, q: "", ctx: null, pais: null, linha: null, f: novoFiltro(), n: 20, abertos: new Set(), painel: false, soEsp: false, semelhantes: false };
     if (r === "colecao" && arg) { estado.rota = "res"; estado.col = arg; }
     else if (r === "busca" && arg) { estado.rota = "res"; estado.q = arg; }
     else if (r === "clima" && arg) { estado.rota = "res"; estado.ctx = arg; }
     else if (r === "pais" && arg) { estado.rota = "res"; estado.pais = arg; }
+    else if (r === "linha" && arg) { estado.rota = "res"; estado.linha = arg; }
     render();
     window.scrollTo(0, 0);
     if (estado.q && SEM.ligada) buscarSignificado(estado.q).then(() => { if (estado.q) render(); }).catch(() => {});
@@ -446,17 +486,64 @@
     const seletor = `<form class="busca pais-form"><select name="pais" aria-label="${esc(t("pais_escolha"))}"><option value="">${esc(t("pais_escolha"))}…</option>
       <optgroup label="${esc(t("lusofonos"))}">${lus.map(opt).join("")}</optgroup><optgroup label="${esc(t("outros_paises"))}">${outros.map(opt).join("")}</optgroup></select><button type="submit">${esc(t("pais_ir"))}</button></form>`;
     const ex = t("ex").map((e) => `<button data-q="${esc(e)}">${esc(e)}</button>`).join(" · ");
-    return `<section class="abertura"><h1>${esc(t("titulo"))}</h1><p>${esc(t("intro"))}</p>${formBusca("")}<div class="exemplos">${esc(t("exemplos"))} ${ex}</div></section>
-      <h2 class="secao">${esc(t("pais_titulo"))}</h2>${seletor}
-      <h2 class="secao">${esc(t("colecoes"))}</h2><div class="grade">${cols}</div>
-      <h2 class="secao">${esc(t("clima"))}</h2><div class="grade">${climas}</div><p class="mudo" style="font-size:.8rem;margin-top:8px">${esc(t("ctx_fonte"))}</p>`;
+    const fmt = (n) => n.toLocaleString(lang);
+    const lins = Object.values(S.tax).filter((n) => n.f === "linha");
+    const nLin = lins.filter((n) => n.id !== "LIN.CAP").length;
+    const numeros = [[S.docs.length, t("n_docs")], [4, t("n_col")], [nLin, t("n_lin")], [S.paises.length, t("n_paises")]]
+      .map(([n, r]) => `<div class="capa-num"><b>${fmt(n)}</b><span>${esc(r)}</span></div>`).join("");
+    const ent = t("ent");
+    const icone = {
+      busca: '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m15.5 15.5 5 5"/></svg>',
+      col: '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="7" height="16" rx="1.5"/><rect x="12" y="4" width="4" height="16" rx="1.5"/><path d="m18 5 3 .8-3.6 14.4-3-.8z"/></svg>',
+      pais: '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M3.5 12h17M12 3.5c2.6 2.4 3.8 5.2 3.8 8.5s-1.2 6.1-3.8 8.5c-2.6-2.4-3.8-5.2-3.8-8.5S9.4 5.9 12 3.5z"/></svg>',
+    };
+    const entradas = `<div class="entradas">
+      <button class="entrada" data-acao="focar-busca">${icone.busca}<h3>${esc(ent.busca[0])}</h3><p>${esc(ent.busca[1])}</p></button>
+      <button class="entrada" data-acao="ir-colecoes">${icone.col}<h3>${esc(ent.col[0])}</h3><p>${esc(ent.col[1])}</p></button>
+      <div class="entrada">${icone.pais}<h3>${esc(ent.pais[0])}</h3><p>${esc(ent.pais[1])}</p>${seletor}</div></div>`;
+    const maxLin = Math.max(...lins.map((n) => S.docs.filter((d) => (d.ln || []).includes(n.id)).length));
+    const linhasHtml = lins.map((n) => {
+      const k = S.docs.filter((d) => (d.ln || []).includes(n.id)).length;
+      return `<button class="linha-cap" data-ir="#/linha/${n.id}"><span class="nome">${esc(rotulo(n.id))}</span>
+        <span class="barra"><i style="width:${Math.max(4, Math.round(100 * k / maxLin))}%"></i></span><span class="n">${fmt(k)}</span></button>`;
+    }).join("");
+    const como = t("como").map(([h, p], i) => `<div class="passo"><span class="i">${i + 1}</span><h3>${esc(h)}</h3><p>${esc(p)}</p></div>`).join("");
+    return `<section class="capa-hero"><div class="capa-in">
+        <p class="capa-selo">${esc(t("capa_selo"))}</p>
+        <h1>${esc(t("titulo"))}</h1><p class="capa-intro">${esc(t("intro"))}</p>
+        ${formBusca("")}<div class="exemplos">${esc(t("exemplos"))} ${ex}</div></div>${copas()}</section>
+      <section class="capa-numeros">${numeros}</section>
+      <h2 class="secao">${esc(t("comecar"))}</h2>${entradas}
+      <h2 class="secao" id="capa-colecoes">${esc(t("colecoes"))}</h2><div class="grade">${cols}</div>
+      <h2 class="secao">${esc(t("linhas_tit"))}</h2><div class="linhas-cap">${linhasHtml}</div><p class="nota-capa">${esc(t("linhas_nota"))}</p>
+      <h2 class="secao">${esc(t("clima"))}</h2><div class="grade">${climas}</div><p class="nota-capa">${esc(t("ctx_fonte"))}</p>
+      <section class="capa-como"><h2>${esc(t("como_tit"))}</h2><div class="passos">${como}</div></section>`;
   }
+
+  // silhueta de copas de árvores (decorativa) na base da abertura
+  function copas() {
+    const larg = 1200, alt = 90;
+    const camada = (raios, base, desloc) => {
+      let d = `M0 ${alt} L0 ${base} `, x = -desloc, i = 0;
+      while (x < larg) {
+        const r = raios[i++ % raios.length];
+        d += `L${x} ${base} A${r} ${r * 0.9} 0 0 1 ${x + 2 * r} ${base} `;
+        x += 2 * r - r * 0.35;
+      }
+      return d + `L${larg} ${base} L${larg} ${alt} Z`;
+    };
+    const fundo = camada([30, 42, 26, 50, 34, 22, 40, 32, 54, 28, 38, 44], 62, 10);
+    const frente = camada([22, 30, 18, 34, 26, 16, 28, 24, 36, 20, 26, 32, 18], 80, 30);
+    return `<svg class="copas" viewBox="0 0 ${larg} ${alt}" preserveAspectRatio="none" aria-hidden="true"><path class="c1" d="${fundo}"/><path class="c2" d="${frente}"/></svg>`;
+  }
+
 
   function baseAtual() {
     if (estado.q && SEM.ligada && SEM.cache.has(estado.q)) return SEM.cache.get(estado.q);
     if (estado.q) return buscar(estado.q);
     if (estado.col) return { docs: S.docs.filter((d) => d.c.includes(estado.col)), conceitos: [] };
     if (estado.ctx) return { docs: S.docs.filter((d) => d.x.includes(estado.ctx)), conceitos: [] };
+    if (estado.linha) return { docs: S.docs.filter((d) => (d.ln || []).includes(estado.linha)), conceitos: [] };
     if (estado.pais) return docsDoPais(estado.pais);
     return { docs: S.docs, conceitos: [] };
   }
@@ -484,6 +571,7 @@
     else if (estado.col) titulo = esc((t("col")[estado.col] || [estado.col])[0]);
     else if (estado.ctx) titulo = esc((t("ctx")[estado.ctx] || [estado.ctx])[0]);
     else if (estado.pais && atual.pais) titulo = esc(nomePais(atual.pais));
+    else if (estado.linha) titulo = esc(rotulo(estado.linha));
 
     const cabPais = atual.pais ? `<div class="pais-cab"><b>${esc(t("pais_climas"))}:</b> ${Object.entries(atual.pais.kg).filter(([, f]) => f >= 0.05).map(([k, f]) =>
       `<span class="etq clima${f >= 0.10 ? "" : " fraco"}" title="${esc(kgRot(k))}">${esc(k)} ${Math.round(f * 100)}%</span>`).join(" ")}${atual.nIguais === 0 ? `<p class="aviso">${esc(t("pais_sem_igual"))}</p>` : ""}<p class="pais-esp"><b>${esc(t("pais_esp"))}:</b> ${(atual.pais.especies || []).length ? atual.pais.especies.map((e) => `<i>${esc(e)}</i>`).join(", ") : esc(t("pais_sem_esp"))}</p>
@@ -536,6 +624,14 @@
   function ligarEventos(app) {
     app.querySelectorAll("[data-ir]").forEach((b) => b.addEventListener("click", () => ir(b.dataset.ir)));
     app.querySelectorAll("[data-q]").forEach((b) => b.addEventListener("click", () => ir("#/busca/" + encodeURIComponent(b.dataset.q))));
+    app.querySelectorAll('[data-acao="focar-busca"]').forEach((b) => b.addEventListener("click", () => {
+      const inp = app.querySelector(".capa-hero input[name=q]");
+      if (inp) { window.scrollTo({ top: 0, behavior: "smooth" }); inp.focus({ preventScroll: true }); }
+    }));
+    app.querySelectorAll('[data-acao="ir-colecoes"]').forEach((b) => b.addEventListener("click", () => {
+      const alvo = document.getElementById("capa-colecoes");
+      if (alvo) alvo.scrollIntoView({ behavior: "smooth", block: "start" });
+    }));
     app.querySelectorAll("form.pais-form").forEach((f) => f.addEventListener("submit", (e) => {
       e.preventDefault(); if (f.pais.value) ir("#/pais/" + f.pais.value);
     }));
